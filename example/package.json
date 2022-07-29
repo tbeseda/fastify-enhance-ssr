@@ -1,0 +1,22 @@
+{
+  "name": "enhanstify",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@enhance/enhance-style-transform": "^0.0.1-alpha.1",
+    "@enhance/ssr": "^2.3.3",
+    "fastify": "^4.3.0",
+    "fastify-plugin": "^4.0.0",
+    "pino-pretty": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

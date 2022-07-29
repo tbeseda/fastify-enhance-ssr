@@ -1,0 +1,19 @@
+{
+  "name": "fastify-enhance-ssr",
+  "version": "0.0.0",
+  "description": "",
+  "author": "tbeseda",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@enhance/ssr": "^2.3.3",
+    "fastify-plugin": "^4.0.0"
+  },
+  "keywords": [
+    "enhance",
+    "fastify"
+  ]
+}
