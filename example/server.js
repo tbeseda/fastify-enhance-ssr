@@ -1,5 +1,6 @@
 import Fastify from 'fastify';
-import enhanceSsr from '../index.js';
+// import enhanceSsr from '../index.js';
+import enhanceSsr from 'fastify-enhance-ssr';
 import styleTransform from '@enhance/enhance-style-transform';
 
 import logger from './lib/logger.js';
