@@ -2,7 +2,7 @@
 
 Use [Enhance](https://enhance.dev)'s renderer as a view engine in a Fastify application.
 
-💁  Not to be confused with `@enhance/fastify-plugin`, which offers the full Enhance stack in your Fastify app.
+> 💁  Not to be confused with `@enhance/fastify-plugin`, which offers the full Enhance stack in your Fastify app.
 
 ## Example
 
@@ -42,6 +42,7 @@ Also see [`example/server.js`](./example/server.js) for further usage.
 `fastify-enhance-ssr` adds `reply.enhance`.
 
 ### `enhanceSsr` options
+
 ```ts
 {
   layout: function(body: string, data: object): string,
@@ -52,10 +53,13 @@ Also see [`example/server.js`](./example/server.js) for further usage.
 ### `reply.enhance(body, data, options)`
 
 #### `body`
+
 `string | function(data): string` a string of HTML or a function that returns a string of HTML. This will be passed to Enhance SSR.
 
 #### `data`
+
 `object` state provided to the body, layout, and Enhance (as `initialState`)
 
 #### `options`
+
 `{ layout: function }` override the default layout function

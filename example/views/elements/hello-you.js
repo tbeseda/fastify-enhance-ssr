@@ -4,15 +4,16 @@ export default function HelloYou({ html, state }) {
   } = state;
 
   return html`
+    <style>
+      h1 { color: DarkSlateGray; }
+      ${color
+        ? `:host h1.uid-${uid} { color: ${color}; }`
+        : ''
+      }
+    </style>
 
-<style>
-  h1 { color: DarkSlateGray; }
-  ${color ? `:host h1.uid-${uid} { color: ${color}; }` : ''}
-</style>
-
-<h1 ${uid ? `class="uid-${uid}"` : ''}>
-  Hello, ${name || 'you'}.
-</h1>
-
+    <h1 ${uid ? `class="uid-${uid}"` : ''}>
+      Hello, ${name || 'you'}.
+    </h1>
   `;
 }
